@@ -64,7 +64,7 @@ namespace Geocoding.Tests
 		}
 
 		[Theory]
-		[InlineData("Wilshire & Bundy, Los Angeles")]
+		[InlineData("Wilshire & Amhest, Los Angeles")]
 		public virtual void CanGeocodeWithSpecialCharacters(string address)
 		{
 			Address[] addresses = geocoder.Geocode(address).ToArray();
